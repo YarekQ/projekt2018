@@ -15,4 +15,17 @@ def odwr(pstring):
     """
     print(pstring)
     return (pstring[::-1])
+#funkcje bez returna zwracają "None"
+
 print(odwr("zak"))
+
+#uzycie hintów razem z okreslenien typu wyniku
+def polet(podstawa: float, wysok:float) -> float:
+    """
+
+    :param podstawa: podstawa
+    :param wysok: wysokość
+    :return: pole trójkąta
+    """
+    return 0.5*podstawa*wysok
+
