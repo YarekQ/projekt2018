@@ -1,3 +1,7 @@
-import moduł  (wszystko)
-from moduł import funkcja (tylko funkcja)
-from moduł import * (wszystko ale inne uzycie)
+import cmath
+import binascii
+import time
+
+print(cmath.sqrt(2))
+
+print(time.asctime())
