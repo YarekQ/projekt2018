@@ -13,5 +13,5 @@ def otworz(plik,tryb):
     """
     with open(plik,tryb) as plik:
         database = pickle.load(plik, encoding='utf-8')
-    print(f"znaleziono i otwarto bazę danych ({len(database)-1} transakcji)")
+    print(f"znaleziono i otwarto bazę danych ({len(database)-1} transakcji)\n")
     return database
