@@ -15,7 +15,7 @@ def drukuj(database):
             securities.append(database[line][1])
         if database[line][11] not in exchanges:
             exchanges.append(database[line][11])
-    print(f"znaleziono dane dla transakcji:\nunderlaying:{underlyings[1:]}\nsecurities: {securities[1:]}\nexchanges: {exchanges[1:]}\n")
+    print(f"znaleziono dane dla transakcji:\nunderlying:{underlyings[1:]}\nsecurities: {securities[1:]}\nexchanges: {exchanges[1:]}\n")
 
 def filtruj(database,cos):
     """
