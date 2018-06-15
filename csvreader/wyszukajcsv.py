@@ -13,6 +13,7 @@ def wyszukajdane(katalog,switch):
                 listaplikowznalezionych.append(plik)
                 counter+=1
     switch=str(switch)
+    listaplikowznalezionych.sort()
     if switch.upper()=="Y":
         print(f"znalezione pliki: {listaplikowznalezionych}")
     print(f"znaleziono dane w plikach ({counter} plików)\n")

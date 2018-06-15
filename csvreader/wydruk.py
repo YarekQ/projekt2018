@@ -1,3 +1,4 @@
+import pprint
 def drukuj(database):
     """
     funkcja selektywnego przeglądu bazy danych
@@ -26,11 +27,9 @@ def filtruj(database,cos):
     """
     # wydruk nagłówka
     print(f"wydruk transakcji dla wartości filtra: {cos}\n")
-    print(f"{database[0][0]:14} {database[0][1]:14} {database[0][2]:16} {database[0][3]:8} {database[0][4]:8} {database[0][5]:8} {database[0][6]:8} {database[0][7]:8}\
-                    {database[0][8]:8} {database[0][9]:8} {database[0][10]:8} {database[0][11]:8} {database[0][12]:8} {database[0][13]:16} {database[0][14]:8}")
+    print(f"{database[0][0]:^14}{database[0][1]:^14}{database[0][2]:^16}{database[0][3]:^8}{database[0][4]:^8}{database[0][5]:^10}{database[0][6]:^8}{database[0][7]:>7}{database[0][8]:^12}{database[0][9]:^12}{database[0][10]:^10}{database[0][11]:^10}{database[0][13]:^22}")
 
     for line in range(0,len(database)):
 
         if cos in database[line]:
-            print(f"{database[line][0]:14} {database[line][1]:14} {database[line][2]:16} {database[line][3]:8} {database[line][4]:8} {database[line][5]:8} {database[line][6]:8} {database[line][7]:8}\
-                    {database[line][8]:8} {database[line][9]:8} {database[line][10]:8} {database[line][11]:8} {database[line][12]:8} {database[line][13]:16} {database[line][14]:8}")
+            print(f"{database[line][0]:^14}{database[line][1]:^14}{database[line][2]:^16}{database[line][3]:^8}{database[line][4]:^8}{database[line][5]:^10}{database[line][6]:^8}{database[line][7]:>7}{database[line][8]:>12}{database[line][9]:^12}{database[line][10]:^10}{database[line][11]:^10}{database[line][13]:^22}")

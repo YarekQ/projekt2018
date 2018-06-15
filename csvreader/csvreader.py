@@ -15,6 +15,6 @@ dopisz(r"c:\Jts\trades.20180504.csv",database)
 zapisz(database,r"c:\Jts\tradesdatabase.bin")
 
 drukuj(database)
-filtruj(database, 'Put')
+filtruj(database,"DB")
 
 
