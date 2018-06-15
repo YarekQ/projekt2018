@@ -10,11 +10,11 @@ database=otworz(r"c:\Jts\tradesdatabase.bin",'rb')
 
 dane=wyszukajdane("C:\Jts","n")
 
-dopisz(r"c:\Jts\trades.20180504.csv",database)
+dopisz(dane,database)
 
 zapisz(database,r"c:\Jts\tradesdatabase.bin")
 
 drukuj(database)
-filtruj(database,"DB")
+filtruj(database,"20180615")
 
 
