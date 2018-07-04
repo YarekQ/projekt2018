@@ -6,6 +6,17 @@ class Auto(object):
         self.silnik=None
         self.nachodzie=False
         self.running=False
+        self.__przebieg=None
+    @property
+    def przebieg(self):
+        if self.__przebieg==None:
+            return 0
+        else:
+            return "1M"
+    @przebieg.setter
+    def przebieg(self,newvalue):
+        if self.__przebieg>1000000:
+            self.__przebieg=self.__przebieg*0.001
 
     def napraw(self):
         if self.nachodzie:

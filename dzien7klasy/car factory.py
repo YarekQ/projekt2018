@@ -24,3 +24,5 @@ for auto in auta:
     auto.switchon()
 print(złomek)
 
+print(blaszak.przebieg)
+
